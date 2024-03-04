@@ -28,7 +28,7 @@ const UploadComponent = () => {
     formData.append('artifact2', data.artifact2[0]);
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/upload-and-process', formData, {
+      const response = await axios.post('https://fastapi-production-f609.up.railway.app/upload-and-process', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -57,13 +57,13 @@ const UploadComponent = () => {
       <div className="col-md-6">
         <form onSubmit={handleSubmit(onSubmit)} className="row g-3">
           <div className="col-md-6">
-            <label htmlFor="artifact1" className="form-label fs-4">
+            <label htmlFor="artifact1" className="form-label fs-5">
               Upload the before image:
             </label>
             <input type="file" className="form-control" {...register('artifact1')} id="artifact1" />
           </div>
           <div className="col-md-6">
-            <label htmlFor="artifact2" className="form-label fs-4">
+            <label htmlFor="artifact2" className="form-label fs-5">
               Upload the after image:
             </label>
             <input type="file" className="form-control" {...register('artifact2')} id="artifact2" />

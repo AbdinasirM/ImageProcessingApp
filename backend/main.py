@@ -127,8 +127,8 @@ async def upload_and_process(title: str = Form(...), artifact1: UploadFile = Fil
             img1 = cv2.imdecode(np.frombuffer(file_content1, dtype=np.uint8), cv2.IMREAD_COLOR)
             img2 = cv2.imdecode(np.frombuffer(file_content2, dtype=np.uint8), cv2.IMREAD_COLOR)
 
-            if img1.shape != img2.shape:
-                raise HTTPException(status_code=422, detail="Images must have the same dimensions")
+            # if img1.shape != img2.shape:
+            #     raise HTTPException(status_code=422, detail="Images must have the same dimensions")
 
             # Run the compute_and_upload_difference function asynchronously
             await compute_and_upload_difference(img1, img2, title)
