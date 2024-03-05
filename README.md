@@ -60,7 +60,7 @@ Ensure you have Python and the required dependencies installed.
 
    ```bash
    cd backend
-   python main.py path/to/before/image.jpg path/to/after/image.jpg
+   uvicorn main:app --reload
    ```
 
 3. The backend will analyze the images and upload the results to Firebase.
@@ -68,10 +68,10 @@ Ensure you have Python and the required dependencies installed.
 
    ```bash
    cd frontend
-   npm start
+   npm run dev
    ```
 
-5. Access the frontend at [http://localhost:8000](http://localhost:8000) to view the processed images.
+5. Access the frontend at [http://localhost:8000](http://localhost:port) to view the processed images.
 
 ## Tech Stack
 
@@ -83,27 +83,3 @@ Ensure you have Python and the required dependencies installed.
 ### Frontend
 - ReactJS
 
-## Contributing
-
-Contributions are welcome! Follow these steps:
-
-1. **Fork the project.**
-2. **Create your feature branch:**
-
-   ```bash
-   git checkout -b feature/new-feature
-   ```
-
-3. **Commit your changes:**
-
-   ```bash
-   git commit -m 'Add new feature'
-   ```
-
-4. **Push to the branch:**
-
-   ```bash
-   git push origin feature/new-feature
-   ```
-
-5. **Open a pull request.**
