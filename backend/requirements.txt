@@ -1,0 +1,8 @@
+python-multipart
+fastapi
+scikit-image
+firebase-admin
+opencv-python-headless
+numpy
+uvicorn
+requests
