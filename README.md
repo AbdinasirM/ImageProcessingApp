@@ -7,7 +7,7 @@ This system works with two pictures – a 'before' and an 'after.' Both pictures
 
 ## Demo
 
-Check out the live demo [here](https://ccc-imageproccessing.netlify.app/).
+Check out the live demo (https://ccc-imageproccessing.netlify.app/).
 
 ## Table of Contents
 - [Backend Installation](#backend-installation)
