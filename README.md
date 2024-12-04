@@ -1,6 +1,4 @@
-Great! Based on your folder structure, let's modify the README to provide more specific instructions:
-
-```markdown
+```
 # Image Processing System
 
 This system works with two pictures – a 'before' and an 'after.' Both pictures need to be the same size for the system to do its magic. The backend, powered by OpenCV in Python, analyzes these images and uploads the results to Firebase. The frontend, built with ReactJS, showcases the processed images.
